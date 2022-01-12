@@ -3,7 +3,8 @@ const hoursEl = document.getElementById("hours");
 const minutesEl = document.getElementById("minutes");
 const secondsEl = document.getElementById("seconds");
 
-const newYears = "29 Nov 2021";
+let now = new Date();
+const newYears = "29 Nov " + now.getFullYear();
 
 function countDown() {
     const newYearsDate = new Date(newYears);
